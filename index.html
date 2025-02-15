@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana de Amor</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            font-family: 'Love Letters', cursive;
+            color: white;
+            text-align: center;
+        }
+        #container {
+            position: relative;
+        }
+        #button, #message {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 20px;
+            border: 2px solid white;
+            background-color: red;
+            cursor: pointer;
+            display: inline-block;
+        }
+        #message {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="button">COSITA HERMOSA</div>
+        <div id="message">TE AMO </div>
+    </div>
+
+    <script>
+        const button = document.getElementById('button');
+        const message = document.getElementById('message');
+
+        button.addEventListener('click', () => {
+            button.style.display = 'none';
+            message.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
